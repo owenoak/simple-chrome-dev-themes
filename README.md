@@ -52,8 +52,10 @@ Update `config.less` if you add/remove any partials.
 ## Changing Themes
 
 1. Copy `/themes/oak.less` and modify color values accordingly.
-2. Rename the file and save in the `/themes` directory.
-3. Specify the theme of your choice in `config.less`.
+1. Rename the file and save in the `/themes` directory.
+1. In the main folder for this project, `grunt watch`.
+1. Change `config.less` to look for your new theme.
+1. Close and re-open the dev tools to see your changes.
 
 ***
 
