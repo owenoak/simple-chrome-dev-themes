@@ -12,6 +12,8 @@ by Maurice Cruz and Simon Owen.
 
 If you're looking for a more full-featured set of customizations, check that package out!
 
+Also, note that this has been tested on Mac only.
+
 
 # Contributing
 
@@ -31,11 +33,9 @@ This means [Node](http://nodejs.org/) is required.
 
 1. View `chrome://flags` and make sure `Enable Developer Tools experiments` is enabled.
 
-1. In Chome Dev Tools > Settings (cog icon or `Shift+?`) > Experiments > Allow custom UI themes.
+1. From the hamburger menu in the upper-right, choose `More tools > Developer Tools`.  Click the `Settings` (cog) icon in the upper-right of the dev tools pane.  Click `Experiments` on the left, then check `Allow custom UI themes`.
 
-1. Go to the `Chrome > Preferences... > Extensions` screen.
-
-1. Make sure `Developer mode` is checked (upper right).
+1. Go to the `Extensions` screen.  Make sure `Developer mode` is checked (upper right).
 
 1. Click `Load unpacked extensions...` and find the `theme-extension` folder inside this package.
 
