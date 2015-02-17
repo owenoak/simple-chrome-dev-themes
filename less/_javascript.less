@@ -1,0 +1,93 @@
+////////////////////////////////////////
+//   JAVASCRIPT STYLES
+////////////////////////////////////////
+
+
+// JavaScript
+@js-atom      : @keyword;		// true, false, undefined
+@js-attribute : @normal;		// ???
+@js-builtin   : @keyword;		// Element???
+@js-comment   : @comment;
+@js-def       : @variable;		// var X, function X
+@js-error     : @normal;		// ???
+@js-header    : @normal;		// ???
+@js-hr        : @normal;		// ???
+@js-keyword   : @keyword;		// var, for, etc
+@js-link      : @normal;		// ???
+@js-meta      : @normal;		// ???
+@js-number    : @constant;		// number constant
+@js-operator  : @operator;
+@js-property  : @normal;		// a.XXX
+@js-string    : @constant;
+@js-tag       : @normal;		// ???
+@js-variable  : @normal;
+@js-variable-2: @variable-2;		// subsequent uses of variable
+
+// JavaScript Objects
+@js-obj-array    : @keyword;		// Array[3]
+@js-obj-boolean  : @keyword;
+@js-obj-function : @constant;
+@js-obj-name     : @variable;
+@js-obj-number   : @constant;
+@js-obj-preview  : @normal;
+@js-obj-regexp   : @constant;
+@js-obj-string   : @constant;
+@js-obj-undefined: @keyword;
+
+// default color
+body .CodeMirror-code {
+	color:@punctuation !important;
+}
+
+.console-object-preview {
+	font-style:normal;
+}
+
+//JAVASCRIPT
+.cm-js-atom 		{ color: @js-atom !important; }
+.cm-js-attribute 	{ color: @js-attribute !important; }
+.cm-js-builtin 		{ color: @js-builtin !important; }
+.cm-js-comment 		{ color: @js-comment !important; }
+.cm-js-def 			{ color: @js-def !important; /*border-bottom:1px dotted rgba(0,0,0,.2);*/}
+.cm-js-error 		{ background: #9D1E15 !important; color: @js-error !important; }
+.cm-js-header 		{ color: @js-header !important; }
+.cm-js-hr 			{ color: @js-hr !important; }
+.cm-js-keyword 		{ color: @js-keyword !important; }
+.cm-js-link 		{ color: @js-link !important; }
+.cm-js-meta 		{ color: @js-meta !important; }
+.cm-js-number 		{ color: @js-number !important; }
+.cm-js-operator 	{ color: @js-operator !important;}
+.cm-js-property 	{ color: @js-property !important; }
+.cm-js-string 		{ color: @js-string !important; }
+.cm-js-string-2 	{ color: @js-string !important; }
+.cm-js-tag 			{ color: @js-tag !important; }
+.cm-js-variable 	{ color: @js-variable !important; }
+.cm-js-variable-2 	{ color: @js-variable-2 !important; }
+
+//COFFEESCRIPT
+.cm-atom 			{ .cm-js-atom }
+.cm-comment 		{ .cm-js-comment }
+.cm-variable 		{ .cm-js-variable }
+.cm-string 			{ .cm-js-string }
+.cm-keyword 		{ .cm-js-keyword }
+.cm-number 			{ .cm-js-number }
+.cm-operator 		{ .cm-js-operator }
+.cm-error 			{ .cm-js-error}
+.cm-s-default .cm-property { .cm-js-variable }
+
+
+// Javascript Objects in console
+.section .properties .name,
+.event-properties .name,
+.console-formatted-object .name 	{ color: @js-obj-name !important; }
+.console-formatted-object,
+.console-formatted-array 			{ color: @js-obj-array !important; }
+.console-formatted-function 		{ color: @js-obj-function !important; }
+.console-formatted-number 			{ color: @js-obj-number !important; }
+.console-formatted-boolean 			{ color: @js-obj-boolean !important; }
+.console-object-preview 			{ color: @js-obj-preview !important; }
+.console-formatted-regexp 			{ color: @js-obj-regexp !important; }
+.console-formatted-string 			{ color: @js-obj-string !important; }
+.console-formatted-undefined 		{ color: @js-obj-undefined !important; }
+.json .title 						{ color: @js-obj-preview  !important;}
+.json .separator 					{ color: @punctuation !important;}

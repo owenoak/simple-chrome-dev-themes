@@ -1,0 +1,65 @@
+////////////////////////////////////////
+//   CONSOLE STYLES
+////////////////////////////////////////
+
+
+// Get console to look closer to FF
+#console-messages {
+	.console-message-wrapper {
+		margin: 0 !important;
+	}
+
+	.console-message,
+	.console-user-command {
+		/// border-bottom rather than margin
+		border-bottom:1px solid @bottom-border-light !important;
+		// a bit of vertical space
+		padding-top:3px;
+		padding-bottom:3px;
+
+		// make bg color go all the way across
+		margin-left:0 !important;
+		padding-left:20px !important;
+		&:before {
+			left: 7px  !important;
+		}
+
+		// make icon center vertically
+		&:before {
+			margin-top:-4px;
+		}
+	}
+
+	.console-info-level {
+		background-color:#ebf5ff !important;
+		.console-message-text {
+			color:black !important;
+		}
+	}
+	.console-warning-level {
+		background-color:#ffffc8 !important;
+		.console-message-text {
+			color:black !important;
+		}
+	}
+
+	.console-error-level {
+		background-color:#ffebeb !important;
+		.console-message-text {
+			color:red !important;
+		}
+	}
+
+	.console-user-command {
+		& > .console-message-text {
+			opacity:.5;
+			color:#0322a2 !important;
+		}
+	}
+
+	.console-user-command-result {
+		border-bottom-color:@bottom-border-dark !important;
+	}
+
+}
+

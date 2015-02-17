@@ -1,0 +1,110 @@
+////////////////////////////////////////
+//   PAGE / PANEL STYLES
+////////////////////////////////////////
+
+
+body,
+body /deep/ .panel-enabler-view,
+.console-view
+{
+	background-color:@global-background !important;
+}
+
+// Top toolbar
+.TOOLBAR() {
+	background-image: none !important;
+	background-color:@toolbar-bg !important;
+}
+
+// bar below toolbar
+.HEADER_2() {
+	background-color:@header2-bg !important;
+	border-bottom:1px solid @bottom-border !important;
+}
+
+// bar below level 2
+.HEADER_3() {
+	background-color:@header3-bg !important;
+	border-bottom:1px solid @bottom-border !important;
+}
+
+// Round tabs in headers
+.ROUND_TABS() {
+	.tabbed-pane-header-tabs {
+		padding-left:4px;
+
+		// Round tabs
+		.tabbed-pane-header-tab {
+			font-size:11px;
+			border-color:transparent !important;
+			margin-top:3px;
+			border-top-left-radius:8px;
+			border-top-right-radius:8px;
+			padding-left:6px;
+			padding-right:4px;
+
+			&.selected {
+				box-shadow: 0 0 3px rgba(0,0,0,.5);
+				background-color: @global-background !important;
+			}
+
+			.close-button-gray {
+				position:relative;
+				margin-left:0;
+				left:6px;
+			}
+		}
+	}
+}
+
+
+// toolbar
+body .toolbar-background,
+body.undocked.platform-mac-mountain-lion.inactive .toolbar-background,
+body.undocked.platform-mac-mountain-lion .toolbar-background,
+body.platform-mac-mountain-lion.inactive .toolbar-background,
+body.platform-mac-mountain-lion .toolbar-background,
+body.undocked.platform-mac.inactive .toolbar-background,
+body.undocked.platform-mac .toolbar-background,
+body.inactive .toolbar-background,
+body:not(.undocked) .toolbar-background,
+#drawer-tabbed-pane > .tabbed-pane-header {
+	.TOOLBAR();
+}
+
+// level 2 panel header
+.panel-status-bar,
+.sidebar,
+.sidebar-pane-title,
+.CodeMirror-gutters,		// script pane
+#sources-panel-sources-view .sources-status-bar,
+.scripts-debug-toolbar,
+.profiles-status-bar,
+.console-status-bar
+{
+	.HEADER_2();
+}
+
+// level 3 panel header
+.resources-dividers-label-bar,
+.data-grid th {
+	.HEADER_3();
+}
+
+
+// console toolbar when console + main panel showing
+#drawer-tabbed-pane {
+	.tabbed-pane-header {
+		.TOOLBAR();
+	}
+	.ROUND_TABS()
+}
+
+// tabs not inside the toolbar
+.tabbed-pane-content .tabbed-pane {
+	.tabbed-pane-header {
+		.HEADER_2();
+	}
+	.ROUND_TABS()
+}
+

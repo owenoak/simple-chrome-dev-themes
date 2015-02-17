@@ -1,0 +1,19 @@
+{
+  "name": "simple-chrome-dev-themes",
+  "version": "0.0.1",
+  "description": "Chrome Devtools themes using the Simple Chrome Themes template",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owenoak/simple-chrome-dev-themes.git"
+  },
+  "author": "Owen Williams",
+  "license": "MIT License",
+  "devDependencies": {
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.1",
+    "grunt-contrib-compress": "~0.7.0",
+    "grunt-bump": "0.0.13"
+  }
+}

@@ -1,0 +1,43 @@
+////////////////////////////////////////
+//   FONTS
+////////////////////////////////////////
+
+.monospace,
+.source-code,
+
+html .monospace,
+body .monospace,
+
+html /deep/ .monospace,
+body /deep/ .monospace,
+
+html /deep/ .platform-mac .monospace,
+body /deep/ .platform-mac .monospace,
+
+html .source-code,
+body .source-code,
+
+html /deep/ .source-code,
+body /deep/ .source-code,
+
+html /deep/ .platform-mac .source-code,
+body /deep/ .platform-mac .source-code
+{
+	font-family: @monospace-font-family !important;
+	font-size  : @monospace-font-size !important;
+	line-height: @normal-text-height !important;
+}
+
+html .platform-mac,
+body .platform-mac,
+
+html /deep/ .platform-mac,
+body /deep/ .platform-mac,
+
+html /deep/ .component-root,
+body /deep/ .component-root
+{
+	font-family: @normal-font-family !important;
+	font-size  : @normal-font-size !important;
+	line-height: @normal-text-height !important;
+}
